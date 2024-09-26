@@ -1,0 +1,25 @@
+server:
+    port: 8080
+
+spring:
+    datasource:  #配置数据库信息
+        driver-class-name: com.mysql.cj.jdbc.Driver   #mysql驱动
+        #url:jdbc:mysql://ip地址:端口号/数据库名?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&allowMultiQueries=true
+        url: jdbc:mysql://123.60.8.109:23306/ymy?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&allowMultiQueries=true
+        username: root    #数据库名称
+        password: 123456  #数据库密码
+
+
+#配置mybatis-plus
+mybatis-plus:
+    #告诉mybatis框架映射文件的位置
+    mapper-locations: classpath:mapper/*.xml
+    #设置类型别名，在映射文件中可以直接写首字母小写的实体类名称即可
+    type-aliases-package: com.example.demo.generate.generator.domain
+    #驼峰映射：例如数据库中的字段名emp_name能对应实体类中的属性名empName
+    configuration:
+        map-underscore-to-camel-case: true
+#在控制台查看sql语句
+logging:
+    level:
+        com.oneRound.demo01: debug

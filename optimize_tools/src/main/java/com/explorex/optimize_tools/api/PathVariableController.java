@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.explorex.optimize_tools.demos.web;
+package com.explorex.optimize_tools.api;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;

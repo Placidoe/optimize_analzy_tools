@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.explorex.optimize_tools.demos.web;
+package com.explorex.optimize_tools.api;
 
 /**
  * @author <a href="mailto:chenxilzx1@gmail.com">theonefx</a>
